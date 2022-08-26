@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<style>
+  table, th, td {
+    border: 1px solid black;
+  }
+  table { 
+    max-height: 100%;
+  }
+</style>
+<head>
+  <%- include ("../partials/header.ejs") %>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Database Results</h2>
+
+<table style="width:100%" cellpadding="10">
+  <tr>
+    <th>Index</th>
+    <th>UID</th>
+    <th>Tweet</th>
+    <th>Open Answer</th>
+    <th>Score</th>
+    <th>Time</th>
+  </tr>
+  <% results.forEach(function(r) { %>
+    <tr>
+      <td><%= r.index %></td>
+      <td><%= r.uid %></td>
+      <td><%= r.tweet_url %></td>
+      <td><%= r.open_answer %></td>
+      <td><%= r.score %></td>
+      <td><%= r.time %></td>
+    </tr>
+  <% }); %>
+</table>
+
+</div>
+
+</body>
+</html>

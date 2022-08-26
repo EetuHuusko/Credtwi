@@ -1,0 +1,44 @@
+@import "base/fonts";
+@import "base/reset";
+@import "base/variables";
+
+body {
+  color: $black;
+  background-color: $greyWhite;
+}
+
+#popup {
+  min-width: 350px;
+  padding: 20px 15px;
+
+  h2, p {
+    text-align: center;
+  }
+
+  button {
+    width: 75%;
+    background: green;
+    color: white;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 5px 10px;
+    justify-content: center;
+    margin: 20px auto;
+    cursor: pointer;
+    opacity: 0.8;
+    display: flex;
+  }
+
+  #Onboard__button {
+    background: #0D3580;
+  }
+
+  #final__button {
+    background: #0D3580;
+  }
+
+  button:disabled {
+    background: #696969;
+  }
+
+}

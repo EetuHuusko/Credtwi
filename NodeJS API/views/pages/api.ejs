@@ -1,0 +1,36 @@
+<% 
+const { Pool, Client } = require('pg');
+const connectionString = process.env.CONNECTION_STRING;
+
+const pool = new Pool({
+  connectionString,
+})
+
+const queryText = 'INSERT INTO credibility (tweet_url, score) VALUES ($1, $2) RETURNING *';
+
+pool.query(queryText, (err, res) => {
+  console.log(err, res)
+  pool.end()
+})
+
+const client = new Client({
+  connectionString,
+})
+
+client.connect()
+
+client.query(queryText, (err, res) => {
+  console.log(err, res)
+  client.end()
+})
+
+addEventListener('fetch', function(event) {
+  
+  event.respondWith(
+    new Response(myBody, {
+      headers: { 'Content-Type': 'text/plain' }
+    })
+  );
+});
+
+%>

@@ -1,0 +1,48 @@
+@import "base/fonts";
+@import "base/variables";
+
+img:not([alt]), img:not([height]), img:not([width]) {
+    filter: none;
+}
+
+html {
+	overflow-y: initial !important;
+}
+
+.questHidden {
+	display: none;
+}
+
+.questForm div{
+	padding: 5px;
+	position: relative;
+	z-index: 1;
+}
+
+.questForm label {
+	font-size: 125%;
+	font-weight: bold;
+}
+
+.questForm .card-header {
+	display: inline;
+	justify-content: center;
+	font-weight: bold;
+	background-color:lightskyblue;
+}
+
+.quest_action {
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+}
+
+.quest_action:hover div[dir='ltr'] {
+	border-radius: 50%;
+	background: #1DF2D8;
+	background-clip: content-box;
+}
+
+.range-legend {
+	font-weight: bold;
+}
