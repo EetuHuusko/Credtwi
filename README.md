@@ -1,5 +1,5 @@
 # Credtwi
-Google Chrome plugin for crowdsoucring research on Twitter
+Google Chrome plugin for crowdsoucring research on Twitter. Can be found on Chrome Web Store: https://chrome.google.com/webstore/detail/credtwi/jflidcmopcebpcjccnbecjiiofcjgmhe
 
 # Chrome Plugin Folder
 Contains the Credtwi plugin designed over Web Extension starter (https://github.com/abhijithvijayan/web-extension-starter)
